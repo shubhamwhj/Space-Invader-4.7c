@@ -52,6 +52,7 @@ while True:
         
         if enemy.x == 0 or enemy.x==380:
             enemyspeed=enemyspeed * -1
+            #code to shift a single enemy downwards. Replace it with a loop that can shift all enemies downwards
             enemy.y= enemy.y + 20
         
         pygame.draw.rect(screen,(123,200,100),enemy)
