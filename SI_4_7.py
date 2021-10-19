@@ -14,9 +14,10 @@ enemyspeed= -2;
 
 enemies=[]
 
-#loop to create a row of enemies. Put this loop inside another loop to create multiple rows of enemies.
-for i in range(1,6):
-    enemies.append( pygame.Rect(i*70,50,40,40) )
+for j in range(1,6):
+    #loop to create a row of enemies. Put this loop inside another loop to create multiple rows of enemies.
+    for i in range(1,6):
+        enemies.append( pygame.Rect(i*70,j*50,40,40) )
 
 bullet=pygame.Rect(200,400,5,10)
 bulletspeed=5 
