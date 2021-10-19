@@ -14,6 +14,7 @@ enemyspeed= -2;
 
 enemies=[]
 
+#loop to create a row of enemies. Put this loop inside another loop to create multiple rows of enemies.
 for i in range(1,6):
     enemies.append( pygame.Rect(i*70,50,40,40) )
 
